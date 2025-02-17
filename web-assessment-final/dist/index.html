@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Web-assessment-final</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scotland Sports Facilities</title>
+  
+  <!-- Mapbox GL style file -->
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css" rel="stylesheet">
+  
+  <!-- The Mapbox GL JavaScript file is introduced -->
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.js"></script>
+</head>
+  
+<body>
+  
+<div id="info-panel">
+  <h2>Scotland Sports Facilities Distribution</h2>
+  <div id="filter-controls">
+    <label><input type="radio" name="filter" id="all" checked> All</label>
+    <label><input type="radio" name="filter" id="tennis"> Tennis</label>
+    <label><input type="radio" name="filter" id="swimmingpool"> Swimming Pool</label>
+    <label><input type="radio" name="filter" id="squash"> Squash</label>
+    <label><input type="radio" name="filter" id="fitness"> Fitness</label>
+  </div>
+</div>
+  
+  <!-- Map container, where Mapbox renders the map -->
+  <div id="map"></div>
+  
+<!-- Weather information display -->
+<div id="weather-info">
+  <p>Loading weather...</p>
+</div>
+  
+<div id="feedback-panel">
+  <div id="feedback-header">
+    <h3>Feedback on the Usage of Scotland Sports Facilities</h3>
+    <button id="close-feedback">Close</button>
+  </div>
+  
+  <textarea id="feedback-text" placeholder="Share your experience or suggestions..."></textarea>
+  <button id="submit-feedback">Submit</button>
+  
+  <!-- The historical feedback section is placed at the bottom of the form -->
+  <h3>Feedback History</h3>
+  <div id="feedback-history">
+    <p>No feedback submitted yet.</p> <!-- Default prompt, displayed when there is no feedback -->
+  </div>
+</div>
+
+<!-- Control button -->
+<div id="open-feedback-button">Open Feedback Form</div>
+
+    <!-- Import external JavaScript files -->
+  <script src="script.js"></script>
+  
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
