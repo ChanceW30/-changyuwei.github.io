@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scotland Sports Facilities</title>
+  
+  <!-- 引入 Mapbox GL 样式文件 -->
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css" rel="stylesheet">
+  
+  <!-- 引入 Mapbox GL JavaScript 文件 -->
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.js"></script>
+</head>
+  
+<body>
+  
+<div id="info-panel">
+  <h2>Scotland Sports Facilities Distribution</h2>
+  <div id="filter-controls">
+    <label><input type="radio" name="filter" id="all" checked> All</label>
+    <label><input type="radio" name="filter" id="tennis"> Tennis</label>
+    <label><input type="radio" name="filter" id="swimmingpool"> Swimming Pool</label>
+    <label><input type="radio" name="filter" id="squash"> Squash</label>
+    <label><input type="radio" name="filter" id="fitness"> Fitness</label>
+  </div>
+</div>
+  
+  <!-- 地图容器，Mapbox 会在这里渲染地图 -->
+  <div id="map"></div>
+  
+<!-- 天气信息展示 -->
+<div id="weather-info">
+  <p>Loading weather...</p>
+</div>
+  
+<div id="feedback-panel">
+  <div id="feedback-header">
+    <h3>Feedback on the Usage of Scotland Sports Facilities</h3>
+    <button id="close-feedback">Close</button>
+  </div>
+  
+  <textarea id="feedback-text" placeholder="Share your experience or suggestions..."></textarea>
+  <button id="submit-feedback">Submit</button>
+  
+  <!-- 历史反馈部分，放在表单底部 -->
+  <h3>Feedback History</h3>
+  <div id="feedback-history">
+    <p>No feedback submitted yet.</p> <!-- 默认提示，没有反馈时会显示 -->
+  </div>
+</div>
+
+<!-- 控制按钮（固定在页面右下角） -->
+<div id="open-feedback-button">Open Feedback Form</div>
+
+    <!-- 引入外部 JavaScript 文件 -->
+  <script src="script.js"></script>
+  
+</body>
+</html>
